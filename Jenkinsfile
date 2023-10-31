@@ -13,6 +13,27 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/Dankata30/lbg-hello-world-maven.git'
             }
         }
+
+        stage('Build') {
+            steps {
+                // Get some code from a GitHub repository
+               echo "now on build"
+            }
+        }
+
+        stage('Unit test') {
+            steps {
+                // Get some code from a GitHub repository
+                echo "now running tests"
+            }
+        }
+
+        stage('Package') {
+            steps {
+                // Get some code from a GitHub repository
+                echo "now running package"
+            }
+        }     
         
         stage('Compile') {
             steps {
